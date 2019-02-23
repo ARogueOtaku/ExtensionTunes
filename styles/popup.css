@@ -1,0 +1,162 @@
+.container{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 0;
+    background-color: #222222;
+}
+
+.controls{
+    position: relative;
+    display: grid;
+    width: 100%;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+.add{
+    position: relative;
+    grid-column: 1/-1;
+    height: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.lab{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 3px;
+    background-color: #dddddd;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.inp{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.controls span{
+    color: #dddddd;
+    justify-self: center;
+    cursor: pointer;
+    text-align: center;
+    font-size: 150%;
+    display: inline-block;
+}
+
+.inp:hover + .lab{
+    background-color: #ffffff;
+}
+
+.controls span:hover{
+    color: #ffffff;
+}
+
+.list{
+    background-color: #dddddd;
+    color: hsl(0, 0%, 13%);
+    margin-bottom: 0px;
+    margin-top: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+.shuffle, .repeat{
+    justify-self: center;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #222222;
+    color: #555555;
+}
+
+.shuffle:hover, .repeat:hover{
+    color: #ffffff;
+}
+
+.playlist{
+    padding: 10px;
+    margin: 15px;
+    overflow: hidden;
+    height: 200px;
+    margin-top: 0;
+    background-color: #dddddd;
+}
+
+.playlist ul{
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    height: 100%;
+}
+
+.playlist ul::-webkit-scrollbar{
+    width: 1px;
+    height: auto;
+    background-color: #dddddd;
+}
+
+.playlist ul::-webkit-scrollbar-thumb{
+    background-color: #555555;
+}
+
+.playlist li{
+    position: relative;
+    overflow-wrap: break-word;
+    list-style-type: none;
+    text-align: center;
+    margin: 10px;
+    color: #dddddd;
+    cursor: pointer;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 5px;
+    background-color: #222222;
+}
+
+.playlist li:hover{
+    color: #ffffff;
+}
+
+.playlist li>span{
+    position: absolute;
+    display: inline-block;
+    color: #222222;
+    background-color: #dddddd;
+    padding: 8px 5px;
+    height: 100%;
+    top: 0;
+    right: 0px;
+    transition: all .3s;
+}
+
+.playlist li>span:hover{
+    color: #fd2f2f;
+    transform: scale(1.1);
+}
+
+*{
+    transition: all .5s;
+}
+
+body{
+    margin: 0;
+}

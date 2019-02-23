@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/styles/all.min.css">
+    <link rel="stylesheet" href="/styles/popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="controls">
+            <div class="add">
+                <input type="file" name="inp" class="inp" accept="audio/*" multiple/>
+                <label for="inp" class="lab">Add Tracks</label>
+            </div>
+            <span class="fas fa-backward back"></span>
+            <span class="fas fa-play play"></span>
+            <span class="fas fa-forward next"></span>
+            <p class="fas fa-random shuffle"></p>
+            <p class="list">PlayList</p>
+            <p class="fas fa-redo-alt repeat"></p>
+        </div>
+        <div class="playlist">
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <script src="/scripts/messages.js"></script>
+    <script src="/scripts/popup.js"></script>
+</body>
+
+</html>
